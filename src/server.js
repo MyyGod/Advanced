@@ -30,7 +30,7 @@ mongoose.connect(process.env.DB_URL)
       console.log(`服务运行在 http://localhost:${PORT}（环境：${process.env.NODE_ENV || 'dev'}）`);
     });
   })
-  .catch(err => {
+  .catch((err) => {
     console.error('MongoDB 连接失败：', err.message);
     process.exit(1);
   });

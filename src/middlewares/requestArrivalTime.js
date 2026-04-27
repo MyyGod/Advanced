@@ -12,5 +12,4 @@ const requestArrivalTime = (req, res, next) => {
   // 传递到下一个中间件/路由处理
   next();
 };
-
 module.exports = requestArrivalTime;

@@ -1,11 +1,12 @@
 const express = require('express');
+
 const router = express.Router();
 const {
   getAllUsers,
   getValidUsernames,
   getUserById,
   getAllPositions,
-  getUsersByIdRange
+  getUsersByIdRange,
 } = require('../controllers/userController');
 
 // 1. 获取所有用户
